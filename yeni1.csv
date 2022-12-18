@@ -1,0 +1,5 @@
+"part_id","part_name","quantity_on_hand","quantity_on_order"
+1,"scew",100,200
+2,"nut",105,95
+3,"washer",60,75
+4,"panel",5,3
