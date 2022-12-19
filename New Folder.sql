@@ -12,6 +12,12 @@
 --FROM customer
 --WHERE first_name IN ('Kelly', 'Jo', 'Alexander');
 -----Example3-----
-SELECT first_name, last_name 
+--SELECT first_name, last_name 
+--FROM customer
+--WHERE first_name LIKE 'Kath%';
+-----Example4-----
+SELECT first_name, 
+LENGTH(first_name) name_length
 FROM customer
-WHERE first_name LIKE 'Kath%';
+WHERE first_name LIKE 'K%' AND
+LENGTH(first_name) BETWEEN 3 AND 7
