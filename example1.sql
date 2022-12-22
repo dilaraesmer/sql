@@ -53,28 +53,25 @@ CREATE TABLE movies (
 
 SELECT * FROM movies;
 
+-- creating the movie_revenues table
 
+CREATE TABLE movie_revenues (
+ 
+	revenue_id SERIAL PRIMARY KEY,
+	movie_id INT REFERENCES movies (movie_id),
+	domestic_takings NUMERIC(6,2),
+	international_takings NUMERIC(6,2)
+);
 
+SELECT * FROM movie_revenues;
 
+-- creating the movies_actors table 
 
+CREATE TABLE movies_actors (
 
+    movie_id INT REFERENCES movies (movie_id),
+	actor_id INT REFERENCES actors (actor_id),
+	PRIMARY KEY (movie_id, actor_id)
+);
 
-
-
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+SELECT * FROM movies_actors;
