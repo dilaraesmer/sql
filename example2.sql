@@ -44,5 +44,13 @@ ALTER TABLE examples
 ALTER COLUMN last_name TYPE VARCHAR(50),
 ALTER COLUMN email TYPE VARCHAR(80);
 
+-- deleting tables 
 
+CREATE TABLE practice (
+ 
+      id SERIAL PRIMARY KEY,
+      product_name VARCHAR(50),
+      product_price NUMERIC(4,2)
+);
 
+SELECT * FROM practice;
