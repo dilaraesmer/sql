@@ -30,3 +30,17 @@ VALUES ('Emily', 'Watson', 'ewatson@gmail.com', 'USA', 24),('Theo', 'Scott', 'ts
 ('Emily', 'Smith', 'esmith@gmail.com', 'GBR', 29), ('Jim', 'Burr', 'jburr@gmail.com', 'USA', 54);
 
 SELECT * FROM examples;
+
+-- UPDATE DATA IN A TABLE --
+
+-- UPDATE tablename
+-- SET columnname = 'newvalue'
+-- WHERE columnname = 'value';
+
+UPDATE examples
+SET email = 'davidmitchell@gmail.com'
+WHERE example_id = 1;
+
+SELECT * FROM examples;
+
+
