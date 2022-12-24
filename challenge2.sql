@@ -41,3 +41,9 @@ WHERE full_name = 'Fluffy';
 
 SELECT * FROM pets;
 
+-- 4. Mr. Maxwell from the owners table
+
+DELETE FROM owners
+WHERE last_name = 'Maxwell';
+
+SELECT * FROM owners;
