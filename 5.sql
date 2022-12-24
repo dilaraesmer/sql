@@ -16,3 +16,14 @@ CREATE DATABASE movie_data
 	SELECT first_name, last_name FROM directors;
 	
 	SELECT first_name, last_name, nationality FROM directors;
+	
+-- Retrieving data with a where clause
+
+/*
+
+SELECT columnname FROM tablename
+WHERE columnname = 'value';
+
+*/
+
+SELECT * FROM movies;
