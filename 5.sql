@@ -14,3 +14,5 @@ CREATE DATABASE movie_data
 	SELECT * FROM directors;
 	
 	SELECT first_name, last_name FROM directors;
+	
+	SELECT first_name, last_name, nationality FROM directors;
