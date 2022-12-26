@@ -37,3 +37,46 @@ WHERE actor_id IN (2,3,4,5,6,8);
 
 SELECT actor_id, first_name, last_name FROM actors
 WHERE actor_id NOT IN (2,3,4,5,6,8);
+
+-- Using LIKE with & and _
+
+/*
+
+SELECT columnname FROM table
+WHERE columnname LIKE '%pattern%';
+
+SELECT columnname FROM table
+WHERE columnname LIKE '_pattern_';
+
+*/
+
+SELECT * FROM actors
+WHERE first_name LIKE 'P%';
+
+SELECT * FROM actors
+WHERE first_name LIKE 'Pe_';
+
+SELECT * FROM actors
+WHERE first_name LIKE '%r';
+
+SELECT * FROM actors
+WHERE first_name LIKE '%r%';
+
+SELECT * FROM actors
+WHERE first_name LIKE '__rl__';
+
+-- Selecting data where a column is between 2 values
+
+/*
+
+SELECT columnname1, columnname2 FROM tablename
+WHERE columnname3 BETWEEN VALUE1 AND VALUE2;
+
+*/
+
+SELECT * FROM movies;
+
+SELECT movie_name, release_date FROM movies
+WHERE release_date BETWEEN '1995-01-01' AND '1999-12-31';
+
+SELECT movie_name 
