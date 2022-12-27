@@ -108,5 +108,37 @@ SELECT first_name, last_name, date_of_birth FROM  actors
 ORDER BY first_name ASC;
 
 
+SELECT actor_id first_name, last_name, date_of_birth FROM  actors
+ORDER BY actor_id;
 
 
+SELECT actor_id first_name, last_name, date_of_birth FROM  actors
+ORDER BY actor_id DESC;
+
+
+SELECT actor_id first_name, last_name, date_of_birth FROM  actors
+ORDER BY date_of_birth;
+
+
+SELECT actor_id first_name, last_name, date_of_birth FROM  actors
+ORDER BY date_of_birth ASC;
+
+SELECT actor_id first_name, last_name, date_of_birth FROM  actors
+WHERE gender = 'F'
+ORDER BY date_of_birth DESC;
+
+
+-- Limiting the the number of records returned
+
+/*
+
+SELECT columnname1, columnname2 FROM tablename
+LIMIT N;
+
+*/
+
+SELECT * FROM movie_revenues;
+
+SELECT * FROM movie_revenues
+ORDER BY domestic_takings
+LIMIT 5;
