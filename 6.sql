@@ -84,3 +84,29 @@ WHERE movie_length BETWEEN 90 AND 120;
 
 SELECT movie_name, movie_lang FROM movies
 WHERE movie_lang BETWEEN 'E' AND 'Portuguese';
+
+-- Ordering the results rerturned 
+
+/* 
+
+SELECT columnname1, columnname2 FROM tablename 
+ORDER BY columnname3;
+
+*/
+
+SELECT * FROM actors;
+
+SELECT first_name, last_name, date_of_birth FROM  actors
+ORDER BY first_name;
+
+
+SELECT first_name, last_name, date_of_birth FROM  actors
+ORDER BY first_name DESC;
+
+
+SELECT first_name, last_name, date_of_birth FROM  actors
+ORDER BY first_name ASC;
+
+
+
+
