@@ -26,4 +26,9 @@ SELECT * FROM members;
 SELECT first_name, last_name, job FROM members
 WHERE first_name = 'Levent';
 
+SELECT first_name, last_name, 
+first_name ||' '|| last_name AS full_name
+FROM members;
+
+SELECT CONCAT(first_name, ' ', last_name) FROM members;
 
