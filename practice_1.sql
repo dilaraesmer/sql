@@ -7,9 +7,10 @@ gender VARCHAR(7),
 job VARCHAR(50)
 );
 
+DROP TABLE members;
 
 INSERT INTO members (first_name, last_name, age, gender, job)
-VALUES ('Anne', 'Jones', 21, 'Female', 'Student'),
+VALUES ('Anıl', 'Çiğdem', 30, 'Female', 'Dietitian'),
 ('Ben', 'Smith', 23, 'Male', 'Teacher'),
 ('Rachel', 'Rey', 25, 'Female', 'Developer'),
 ('Samuray', 'Jacob', 34, 'Male', 'Pianist'),
