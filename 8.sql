@@ -25,3 +25,22 @@ WHERE domestic_takings > 100.0;
 
 SELECT SUM(movie_length) FROM movies
 WHERE movie_lang = 'Chinese';
+
+-- Aggregate Functions : MIN and MAX
+
+/*
+SELECT MAX(columnname) FROM tablename;
+SELECT MIN(columnname) FROM tablename;
+*/
+
+SELECT MAX(movie_length) FROM movies;
+SELECT MIN(movie_length) FROM movies;
+
+SELECT MIN(movie_length) FROM movies
+WHERE movie_lang = 'Japanese';
+
+SELECT MAX(release_date) FROM movies;
+
+SELECT MIN(release_date) FROM movies;
+
+SELECT MAX(movie_name) FROM movies;
