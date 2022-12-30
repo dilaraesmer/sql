@@ -49,3 +49,13 @@ SELECT MAX(movie_name) FROM movies;
 SELECT MIN(movie_name) FROM movies;
 
 
+-- Aggregate Function : AVG
+
+/*
+SELECT AVG(columnname) FROM tablename;
+*/
+
+SELECT AVG(movie_length) FROM movies;
+
+SELECT AVG(movie_length) FROM movies
+WHERE age_certificate = '18';
