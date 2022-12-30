@@ -19,4 +19,7 @@ WHERE age_certificate = '15';
 SELECT COUNT(*) FROM directors
 WHERE nationality = 'Japanese';
 
--- 5.
+-- 5.What is the average movie length for Chinese movies?
+
+SELECT AVG(movie_length) FROM movies
+WHERE movie_lang = 'Chinese';
