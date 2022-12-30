@@ -32,3 +32,4 @@ FROM members;
 
 SELECT CONCAT(first_name, ' ', last_name) FROM members;
 
+SELECT CONCAT_WS('-', first_name, last_name, job) FROM members;
