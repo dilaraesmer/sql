@@ -59,3 +59,15 @@ SELECT AVG(movie_length) FROM movies;
 
 SELECT AVG(movie_length) FROM movies
 WHERE age_certificate = '18';
+
+-- Grouping data 
+
+/*
+SELECT column1, AGGFUN(column2) FROM tablename
+GROUP BY column1;
+*/
+
+SELECT COUNT(movie_lang) FROM movies;
+
+SELECT movie_lang, COUNT(movie_lang) FROM movies
+GROUP BY movie_lang;
