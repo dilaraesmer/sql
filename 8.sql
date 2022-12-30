@@ -71,3 +71,7 @@ SELECT COUNT(movie_lang) FROM movies;
 
 SELECT movie_lang, COUNT(movie_lang) FROM movies
 GROUP BY movie_lang;
+
+SELECT movie_lang, AVG(movie_length) FROM movies
+GROUP BY movie_lang;
+
