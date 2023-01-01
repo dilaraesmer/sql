@@ -92,4 +92,14 @@ SELECT movie_lang, MIN(movie_length), MAX(movie_length) FROM movies
 WHERE age_certificate = '15'
 GROUP BY movie_lang;
 
+-- HAVING Claueses
+
+/* 
+SELECT column1, AGGFUN(column1) FROM tablename
+GROUP BY column1
+HAVING AGGFUN(column3) = value;
+*/
+
+
+
 
