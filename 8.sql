@@ -75,3 +75,5 @@ GROUP BY movie_lang;
 SELECT movie_lang, AVG(movie_length) FROM movies
 GROUP BY movie_lang;
 
+SELECT movie_lang, age_certificate, AVG(movie_length) FROM movies
+GROUP BY movie_lang, age_certificate;
