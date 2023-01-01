@@ -77,3 +77,19 @@ GROUP BY movie_lang;
 
 SELECT movie_lang, age_certificate, AVG(movie_length) FROM movies
 GROUP BY movie_lang, age_certificate;
+
+SELECT movie_lang, age_certificate, AVG(movie_length) FROM movies
+WHERE movie_length > 120
+GROUP BY movie_lang, age_certificate;
+
+/* syntax ERROR
+SELECT movie_lang, age_certificate, AVG(movie_length) FROM movies
+GROUP BY movie_lang, age_certificate
+WHERE movie_length > 120;
+*/
+
+SELECT movie_lang, MIN(movie_length), MAX(movie_length) FROM movies
+WHERE age_certificate = '15'
+GROUP BY movie_lang;
+
+
