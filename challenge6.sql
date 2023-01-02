@@ -23,3 +23,8 @@ WHERE nationality = 'Japanese';
 
 SELECT AVG(movie_length) FROM movies
 WHERE movie_lang = 'Chinese';
+
+-- 6. How many directors are there per nationality?
+
+SELECT nationality, COUNT(nationality) FROM directors
+GROUP BY nationality;
