@@ -28,3 +28,9 @@ WHERE movie_lang = 'Chinese';
 
 SELECT nationality, COUNT(nationality) FROM directors
 GROUP BY nationality;
+
+-- 7. What is the sum total movie length for each age certificate and movie language combination?
+
+SELECT movie_lang, age_certificate, SUM(movie_length) FROM movies
+GROUP BY movie_lang, age_certificate;
+
