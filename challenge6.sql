@@ -34,3 +34,8 @@ GROUP BY nationality;
 SELECT movie_lang, age_certificate, SUM(movie_length) FROM movies
 GROUP BY movie_lang, age_certificate;
 
+-- 8. Return the movie languages which have a sum total movie length of over 500 minutes?
+
+SELECT movie_lang, SUM(movie_length) FROM movies
+GROUP BY movie_lang
+HAVING SUM(movie_length) > 500;
