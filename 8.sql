@@ -109,6 +109,14 @@ WHERE movie_length > 120
 GROUP BY movie_lang
 HAVING COUNT(movie_lang) > 1;
 
+-- Using Mathematical Operators
 
+/*
+
++ - / * %
+
+*/
+
+SELECT 5 + 6 AS addition;
 
 
