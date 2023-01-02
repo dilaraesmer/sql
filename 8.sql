@@ -118,5 +118,9 @@ HAVING COUNT(movie_lang) > 1;
 */
 
 SELECT 5 + 6 AS addition;
+SELECT 7 - 2 AS substraction;
+SELECT 50 / 5 AS division;
+SELECT 6 * 8 AS multiplication;
 
+SELECT 70 % 2 AS modulus;
 
