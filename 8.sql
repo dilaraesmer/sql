@@ -124,3 +124,8 @@ SELECT 6 * 8 AS multiplication;
 
 SELECT 70 % 2 AS modulus;
 
+SELECT * FROM movie_revenues;
+
+SELECT movie_id, (domestic_takings + international_takings) AS total_takings FROM movie_revenues;
+
+
