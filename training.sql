@@ -25,4 +25,4 @@ COPY "customer_table" FROM 'C:\Users\DELL\Desktop\original.csv'
 DELIMITER ','
 CSV HEADER;
 
-SELECT * FROM customer_table;
+SELECT * FROM c;
