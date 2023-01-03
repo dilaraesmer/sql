@@ -26,3 +26,8 @@ DELIMITER ','
 CSV HEADER;
 
 SELECT * FROM c;
+
+SELECT * FROM customer_table
+UNION
+SELECT * FROM c;
+
