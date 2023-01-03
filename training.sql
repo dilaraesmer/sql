@@ -21,4 +21,8 @@ VALUES(4, 'hsbd', 'sjd', 22, 'dfj@nbd@j.com'),
 
 SELECT * FROM customer_table;
 
-COPY Customer_table FROM 'C:\Users\DELL\Desktop\New Folder\yeni\original.csv' DELIMITER ',' CSV HEADER;
+COPY "customer_table" FROM 'C:\Users\DELL\Desktop\original.csv' 
+DELIMITER ','
+CSV HEADER;
+
+SELECT * FROM customer_table;
