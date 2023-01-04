@@ -21,13 +21,32 @@ VALUES(4, 'hsbd', 'sjd', 22, 'dfj@nbd@j.com'),
 
 SELECT * FROM customer_table;
 
-COPY "customer_table" FROM 'C:\Users\DELL\Desktop\original.csv' 
+COPY "customer_table" FROM 'C:\Users\DELL\Desktop\original.csv'
 DELIMITER ','
 CSV HEADER;
 
 SELECT * FROM c;
 
-SELECT * FROM customer_table
-UNION
+INSERT INTO customer_table
+    SELECT * FROM c
+    ON CONFLICT DO NOTHING;
+	
+	SELECT * FROM customer_table;
+
+SELECT
+    cust_id,
+    COUNT( cust_id )
+FROM
+    customer_table
+GROUP BY
+    cust_id
+HAVING
+    COUNT( cust_id )> 1
+ORDER BY
+    cust_id;
+	
+SELECT first_name, last_name FROM c
+    ORDER BY last_name DESC;
 SELECT * FROM c;
 
+SELECT DISTINCT first_name FROM customer_table;
