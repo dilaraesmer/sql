@@ -50,3 +50,4 @@ SELECT first_name, last_name FROM c
 SELECT * FROM c;
 
 SELECT DISTINCT first_name FROM customer_table;
+
