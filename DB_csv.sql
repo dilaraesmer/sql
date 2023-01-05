@@ -1,4 +1,10 @@
-CREATE TABLE csv_table(Invocie ID BIGSERIAL NOT NULL, Branch CHAR, City VARCHAR(50), Customer type VARCHAR(50),
-					  Gender VARCHAR(6), Product line VARCHAR(50), Unit price numeric, Quantity real, Tax 5% real,
-					  Total real, Date DATE, Time TIME, Payment VARCHAR(50), cogs numeric, gross margin percentage real, 
-					  gross income real, Rating numeric);
+CREATE TABLE example (applicationid numeric, position numeric, application_date DATE, 
+						 stage text, status text, recruiter text, country text, applicant_name text,
+						 salary numeric);
+  
+SELECT application_date, 
+TO_CHAR(application_date, 'DD/MM/YYYY') AS formatted_date
+FROM example;
+
+COPY public."example" FROM '‪C:\Users\DELL\Downloads\example.csv' DELIMITER ',' CSV HEADER;
+SELECT * FROM example;
