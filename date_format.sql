@@ -41,3 +41,30 @@ VALUES(1, 'James', 'IT', 3500, 'May 25, 2016'),
 	  (10, 'Jose', 'HR', 3700, 'January 23, 2016');
 
 SELECT * FROM Employee;
+
+CREATE TABLE date_format(new_date date);
+
+
+INSERT INTO date_format(new_date) VALUES (to_date('2021 Jan 10', 'YYYY Mon DD'));
+
+INSERT INTO date_format(new_date) VALUES (to_date('2021/01/10', 'YYYY/MM/DD'));
+
+INSERT INTO date_format(new_date) VALUES (to_date('2021-01-10', 'YYYY-MM-DD'));
+
+
+SELECT * FROM date_format;
+
+INSERT INTO Employee(Employee_ID, Name, Dept, Salary, Date_Of_Joining)
+VALUES(1, 'James', 'IT', 3500, '2016-05-25'),
+	   (2, 'Simona', 'Electrical', 2500, '2018-08-12'),
+	   (3, 'Kiley', 'Mechanical', 2250, '2019-10-21'),
+	   (4, 'Fletcher', 'IT', 3000, '2017-06-10'),
+	   (5, 'Alisha', 'IT', 2700, '2018-9-16'),
+	   (6, 'Chanel', 'Mechanical', 2500, '2018-12-07'),
+	   (7, 'Erick', 'IT', 3250, '2017-07-13'),
+	   (8, 'Amber', 'Electrical', 2700, '2018-03-05'),
+	   (9, 'Stephen', 'Electrical', 2000, '2020-11-24'),
+	  (10, 'Jose', 'HR', 3700, '2016-01-23');
+	  
+SELECT * FROM Employee
+WHERE Date_Of_Joining > '2018-01-01'; 
