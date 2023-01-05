@@ -68,3 +68,27 @@ VALUES(1, 'James', 'IT', 3500, '2016-05-25'),
 	  
 SELECT * FROM Employee
 WHERE Date_Of_Joining > '2018-01-01'; 
+---------------------------------------------------------
+DROP TABLE Employee;
+
+CREATE TABLE Employee(
+Employee_ID integer NOT NULL PRIMARY KEY,
+Name text NOT NULL,
+Dept text,
+Salary money,
+Date_Of_Joining DATE);
+
+INSERT INTO Employee(Employee_ID, Name, Dept, Salary, Date_Of_Joining)
+VALUES(1, 'James', 'IT', 3500, '20160525'),
+	   (2, 'Simona', 'Electrical', 2500, '20180812'),
+	   (3, 'Kiley', 'Mechanical', 2250, '20191021'),
+	   (4, 'Fletcher', 'IT', 3000, '20170610'),
+	   (5, 'Alisha', 'IT', 2700, '20180916'),
+	   (6, 'Chanel', 'Mechanical', 2500, '20181207'),
+	   (7, 'Erick', 'IT', 3250, '20170713'),
+	   (8, 'Amber', 'Electrical', 2700, '20180305'),
+	   (9, 'Stephen', 'Electrical', 2000, '20201124'),
+	  (10, 'Jose', 'HR', 3700, '20160123');
+	  
+SELECT * FROM Employee;
+
